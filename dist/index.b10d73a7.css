@@ -1,2 +1,86 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 32px;
+}
 
+a {
+  color: inherit;
+}
+
+img, video {
+  pointer-events: none;
+  display: block;
+}
+
+section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+h1 span {
+  margin-bottom: 40px;
+  font-size: 130px;
+  font-weight: 100;
+}
+
+.button {
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50px;
+  margin-top: 70px;
+  padding: 13px 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:after {
+  content: "";
+  background: #000;
+  border-radius: 50px;
+  transition: transform .2s ease-out;
+  position: absolute;
+  inset: 0;
+  transform: translateY(100%);
+}
+
+.second-text {
+  color: #fff;
+  z-index: 2;
+  transition: transform .15s ease-out;
+  position: absolute;
+  top: 13px;
+  transform: translateY(120%);
+}
+
+.button:hover:after {
+  transform: translateY(0);
+}
+
+.button:hover .second-text {
+  transition-delay: .2s;
+  transform: translateY(0);
+}
+
+.time {
+  margin-top: 20px;
+  font-size: 100px;
+}
+
+.circle {
+  border: 5px solid #000;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.end-text {
+  font-size: 50px;
+}
 /*# sourceMappingURL=index.b10d73a7.css.map */
