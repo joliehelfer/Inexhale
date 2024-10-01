@@ -590,6 +590,13 @@ var _gsap = require("gsap");
     stagger: 0.4
 });
 const circle = document.querySelector(".circle");
+(0, _gsap.gsap).to(circle, {
+    scale: 1.5,
+    repeat: -1,
+    yoyo: true,
+    duration: 3,
+    ease: "power1.inOut"
+});
 
 },{"gsap":"K1HQu"}],"K1HQu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
