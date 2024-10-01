@@ -585,6 +585,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"1SICI":[function(require,module,exports) {
 var _gsap = require("gsap");
+(0, _gsap.gsap).from("span", {
+    opacity: 0,
+    stagger: 0.4
+});
 
 },{"gsap":"K1HQu"}],"K1HQu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
