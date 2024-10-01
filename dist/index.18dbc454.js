@@ -589,6 +589,7 @@ var _gsap = require("gsap");
     opacity: 0,
     stagger: 0.4
 });
+const circle = document.querySelector(".circle");
 
 },{"gsap":"K1HQu"}],"K1HQu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

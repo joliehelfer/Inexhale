@@ -5,3 +5,5 @@ gsap.from("span", {
   opacity: 0,
   stagger: 0.4,
 });
+
+const circle = document.querySelector(".circle");
